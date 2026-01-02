@@ -11,6 +11,7 @@ import PlanYourTravel from "./pages/PlanYourTravel";
 import MapTest from "./pages/MapTest";
 import NotFound from "./pages/NotFound";
 import Chatbot from "./components/Chatbot";
+import ItineraryPage from "./pages/ItineraryPage";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
               <Route path="/auth" element={<Auth />} />
               <Route path="/plan-your-travel" element={<PlanYourTravel />} />
               <Route path="/map-test" element={<MapTest />} />
+              <Route path="/itinerary" element={<ItineraryPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
